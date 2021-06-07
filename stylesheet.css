@@ -252,14 +252,39 @@ header {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    width: 942px;
-    height: 1500px;
-    justify-content: space-between;
+   width: 1260px;
+    height: 1272px;
+
 }
 
-/*.item {
+.item {
+width: 33%;
+height: 33%;
+margin-bottom: 30px;
+display: flex;
+align-items: center;
+flex-direction: column;
 
-}*/
+}
+
+.item1{
+    width: 370px;
+    height: 404px;
+   
+    }
+    
+.describe {
+   display: none;
+    background-color: rgba(33, 150, 243, 0.8);
+}
+.item1:hover>.describe{
+transform: translateY(-310px);
+/*background-color: rgba(33, 150, 243, 1);*/
+width: 370px;
+height: 294px;
+display: flex;
+color: floralwhite;
+}
   
 .f_card_2 {
     background-image: url(img/box.jpg);
