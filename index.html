@@ -5,25 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--хед часть-->
   <title>WebStudio</title>
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <html lang="ru">
 </head>
 <header>
   <div class="logo">
     <img class="WebStudio" src="img/Web Studio.svg" alt="Лого">
-  </div>
-  <!--<div class="linc">-->
-  <!--
-    <section class="inner_h">
-    <a class="ssylka1" href="">Студия</a>
-    <a href="index2.html">Портфолио</a>
-    <a href="">Контакты</a>
-    </section>-->
+  </div>                
   <div class="top">
     <ul class="header_a">
       <li class="header_b"><a class="ssylka1" href="">Студия</a></li>
       <li class="header_b"> <a href="index2.html">Портфолио</a></li>
       <li class="header_b"><a href="">Контакты</a></li>
+      
     </ul>
   </div>
   <div class="contact">
@@ -44,64 +38,86 @@
     +38 096 111 11 11
   </div>
 </header>
-
 <body>
   <!--заказ услуг-->
   <section class="hero">
     <h2 class="hero_title">ЭФЕКТИВНЫЕ РЕШЕНИЯ </h2>
     <h1 class="hero_title">ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-    <a class="btn1" href="">
-      <p class="inner">Заказать услуги</p>
-    </a>
+    <a class="btn1" href="">Заказать услуги </a>
   </section>
+  <div class="form">
+    <form>
+      <label>
+        <svg class="form-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="icon-bac" d="M6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V11.25C0 11.6625 0.3375 12 0.75 12H11.25C11.6625 12 12 11.6625 12 11.25V10.5C12 8.505 8.0025 7.5 6 7.5Z" fill="#212121"/>
+          </svg>
+         <span class="placeholder">Имя</span> 
+       <input type="text" placeholder="" class="form-input1">
+      </label>
+      <label>
+        <svg class="form-icon1" width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="icon-bac" d="M11.9958 9.12262L10.1576 8.91275C9.7162 8.8621 9.28199 9.01407 8.97081 9.32525L7.63924 10.6568C5.59123 9.61472 3.91229 7.94302 2.8702 5.88776L4.209 4.54895C4.52018 4.23776 4.67216 3.80355 4.6215 3.36211L4.41163 1.53843C4.32479 0.807506 3.70966 0.257507 2.97151 0.257507H1.71955C0.90179 0.257507 0.221532 0.937769 0.27219 1.75553C0.655739 7.93578 5.59847 12.8713 11.7714 13.2548C12.5892 13.3055 13.2695 12.6252 13.2695 11.8075V10.5555C13.2767 9.82459 12.7267 9.20946 11.9958 9.12262Z" fill="#212121"/>
+          </svg>          
+       <input type="text" placeholder="Телефон" class="form-input2">
+      </label>
+      <label>
+        <svg class="form-icon2" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z" fill="#212121"/>
+          </svg>
+         <input type="text" placeholder="Почта" class="form-input3">
+      </label>
+      <label>
+        <input type="text" placeholder="Комментарий" class="form-input4">
+      </label>
+      <label class="agreement">
+        <input type="checkbox" class="form-input" name="agree" value="I_agree" id="agree">
+        <label class="form-label" for="agree">
+         <span> Соглашаюсь с рассылкой и принимаю <a class="privacy" href="">Условия договора</a></span> 
+        </label>
+      </button>
+      </label>
+      <label>
+        <button type="submit" class="form-button">
+         <h3>Отправить</h3>         
+        </button>
+      </label>
+    </form>
+   </div>
   <!--Преимущества нашей компании-->
-  <ul class="features1">
-    <li>
-      <section class="features">
-        <div class="vector">
-          <img src="img/Vector1.svg" alt="Значек, описывающий проблему">
+   <div class="feature-list">
+     <ul class="features">
+       <li class="feature">
+         <div class="vector">
+         <img src="img/Vector1.svg" alt="">
         </div>
-        <div>
-          <h3>Внимание к деталям</h3>
-          <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+         <h4>Вниание к деталям</h4>
+         <p>
+          Идейные соображения, а также начало повседневной работы по формированию позиции.
+         </p>
+       </li>
+       <li class="feature">
+         <div class="vector">
+         <img src="img/Vector2.svg" alt="">
         </div>
-      </section>
-    </li>
-    <li>
-      <section class="features">
-        <div class="vector">
-          <img src="img/Vector2.svg" alt="Значек, описывающий проблему">
+         <h4>Пунктуальность</h4>
+         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        </li>
+       <li class="feature">
+         <div class="vector">
+          <img src="img/Vector3.svg" alt="">
         </div>
-        <div class="features">
-          <h3>Пунктуальность</h3>
-          <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+         <h4>Планирование</h4>
+         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+      </li>
+       <li class="feature">
+        <div class="vector"> 
+          <img src="img/Vector4.svg" alt="">
         </div>
-      </section>
-    </li>
-    <li>
-      <section class="features">
-        <div class="vector">
-          <img src="img/Vector3.svg" alt="Значек, описывающий проблему">
-        </div>
-        <div>
-          <h3>Планирование</h3>
-          <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-        </div>
-      </section>
-    </li>
-    <li>
-      <section class="features">
-        <div class="features">
-          <div class="vector">
-            <img src="img/Vector4.svg" alt="Значек, описывающий проблему">
-          </div>
-          <h3>Современные технологии</h3>
-          <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-        </div>
-        </div>
-        <section>
-    </li>
-  </ul>
+        <h4>Современные технологии</h4>
+        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+       </li>
+     </ul>
+   </div>
   <!--Услуги нашей компании-->
   <h1 class="func">Чем мы занимаемся</h1>
   <div>
@@ -494,8 +510,9 @@
   <!--Наши клиенты-->
   <div class="client_bg">
     <h1>Наши постоянные клиенты</h1>
-    <div class="clients">
-      <a class="client" href="">
+    <ul class="clients">
+      <li>
+        <a class="client" href="">
         <svg class="icon-cl" width="170" height="90" viewBox="0 0 170 90" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" y="0.5" width="169" height="89" rx="3.5" stroke="#AFB1B8" />
@@ -508,6 +525,8 @@
             fill="#AFB1B8" />
         </svg>
       </a>
+    </li>
+    <li>
       <a class="client" href="">
         <svg class="icon-cl" width="170" height="90" viewBox="0 0 170 90" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -568,6 +587,8 @@
             fill="#AFB1B8" />
         </svg>
       </a>
+    </li>  
+      <li>
       <a class="client" href="">
         <svg class="icon-cl" width="170" height="90" viewBox="0 0 170 90" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -613,6 +634,8 @@
             fill="#AFB1B8" />
         </svg>
       </a>
+    </li>
+    <li>
       <a class="client" href="">
         <svg class="icon-cl" width="170" height="90" viewBox="0 0 170 90" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -631,6 +654,8 @@
             fill="#AFB1B8" />
         </svg>
       </a>
+    </li>
+    <li>
       <a class="client" href="">
         <svg class="icon-cl" width="170" height="90" viewBox="0 0 170 90" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" y="0.5" width="169" height="89" rx="3.5" stroke="#AFB1B8"/>
@@ -646,6 +671,8 @@
           <path class="icon-bac" d="M101.385 58.5399C101.229 60.4437 101.326 62.3598 101.674 64.2377C108.076 60.3922 115.268 54.4504 114.991 47.2694V46.6436C110.417 47.1574 106.139 49.1647 102.812 52.3571C102.033 54.3354 101.552 56.4192 101.385 58.5399Z" fill="#AFB1B8"/>
           </svg>
       </a>
+    </li>
+    <li>
       <a class="client" href="">
         <svg class="icon-cl" width="170" height="90" viewBox="0 0 170 90" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -698,7 +725,8 @@
           <path class="icon-bac" d="M70.0015 65.978L81.1962 55.3774L70.0015 52.3647V65.978Z" fill="#AFB1B8" />
         </svg>
       </a>
-    </div>
+    </li>
+    </ul>
   </div>
   <!--Футер-->
   <footer>
@@ -719,7 +747,7 @@
         </address>
       </div>
       <div class="ftr_p_2">
-        <p class="whi   ">ПРИСОЕДИНЯЙТЕСЬ!</p>
+        <p class="whi">ПРИСОЕДИНЯЙТЕСЬ!</p>
         <ul class="ftr_links">
           <li class="ftr_link">
             <svg class="icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -800,6 +828,24 @@
             </svg>
           </li>
         </ul>
+      </div>
+      <div class="ftr_p_3 ">
+        <p class="whi">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+        <form name="mailout">
+          <label>
+        <input type="text" class="email-input" placeholder="E-mail">
+        </label>
+      </div>
+      <div class="ftr_p_4">
+        <label>
+        <button type="submit" class="submit-button">
+         <p>ПОДПИСАТЬСЯ</p>  
+          <svg class="submit-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
+          </svg> 
+        </button>
+        </label>
+      </form>
       </div>
     </div>
   </footer>
